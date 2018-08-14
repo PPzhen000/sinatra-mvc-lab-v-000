@@ -1,7 +1,7 @@
 class PigLatinizer
 
   def initialize(text = "")
-    @pigtext = piglatinize(text)
+    piglatinize(text)
   end
 
   def vowel?(word)
@@ -40,5 +40,5 @@ class PigLatinizer
       piglatinize_word(input)
     end
   end
-  
+
 end
