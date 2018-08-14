@@ -1,7 +1,7 @@
 class PigLatinizer
 
   def initialize(text = "")
-    @pigtext = piglatinize_sentense(text)
+    @pigtext = piglatinize(text)
   end
 
   def vowel?(word)
@@ -32,12 +32,12 @@ class PigLatinizer
     sentence = sentence.join(" ")
   end
 
-  def piglatinize(input) 
+  def piglatinize(input)
     input = input.split(" ")
-    if input.length > 1 
-      piglatinize_sentense(input) 
-    else 
-      piglatinize_word(input) 
+    if input.length > 1
+      piglatinize_sentense(input)
+    else
+      piglatinize_word(input)
     end 
-  end 
+  end
 end
