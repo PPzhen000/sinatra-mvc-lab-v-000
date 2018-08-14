@@ -30,7 +30,6 @@ class PigLatinizer
   end
 
   def piglatinize_sentense(sentence)
-
     # sentence = sentence.split(" ")
     sentence.collect {|word| piglatinize_word(word)}.join(" ")
   end
@@ -40,7 +39,7 @@ class PigLatinizer
     result = ""
     input = input.split(" ")
     if input.length > 1
-      result = piglatinize_sentense(input)
+      result = piglatinize_sentense(input) #array is passing in 
     else
       result = piglatinize_word(input)
     end
