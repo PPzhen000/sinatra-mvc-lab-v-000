@@ -35,7 +35,7 @@ class PigLatinizer
   end
 
   def piglatinize(input)
-    binding.pry
+    # binding.pry
     result = ""
     input = input.split(" ")
     if input.length > 1
@@ -43,7 +43,7 @@ class PigLatinizer
     else
       result = piglatinize_word(input)
     end
-    result 
+    result
   end
 
 end
