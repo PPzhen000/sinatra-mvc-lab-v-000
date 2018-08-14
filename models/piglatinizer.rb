@@ -12,7 +12,7 @@ class PigLatinizer
     !vowel?(word)
   end
 
-  def piglatinize(word)
+  def piglatinize_word(word)
     if vowel?(word[0])
       word = word + "way"
     elsif consonant?(word[0]) && vowel?(word[1])
@@ -31,4 +31,13 @@ class PigLatinizer
     sentence = sentence.collect {|word| piglatinize(word)}
     sentence = sentence.join(" ")
   end
+
+  def piglatinize(input) 
+    input = input.split(" ")
+    if input.length > 1 
+      piglatinize_sentense(input) 
+    else 
+      piglatinize_word(input) 
+    end 
+  end 
 end
