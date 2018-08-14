@@ -7,7 +7,7 @@ class PigLatinizer
 
   def vowel?(word)
     binding.pry
-    word.match(/AEIOUaeiou/)
+    word.match(/[AEIOUaeiou]/)
 
   end
 
