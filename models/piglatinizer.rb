@@ -7,6 +7,7 @@ class PigLatinizer
 
   def vowel?(word)
     word.match(/AEIOUaeiou/)
+    binding.pry
   end
 
   def consonant?(word)
@@ -39,7 +40,7 @@ class PigLatinizer
     else
       piglatinize_word(input)
     end
-    binding.pry
+    
   end
 
 end
