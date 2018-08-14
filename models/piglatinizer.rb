@@ -1,9 +1,9 @@
 require 'pry'
 class PigLatinizer
-
-  def initialize(text)
-    piglatinize(text)
-  end
+  #
+  # def initialize(text)
+  #   piglatinize(text)
+  # end
 
   def vowel?(letter)
     letter.match(/[AEIOUaeiou]/)
