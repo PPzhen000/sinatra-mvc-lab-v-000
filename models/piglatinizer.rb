@@ -38,6 +38,6 @@ class PigLatinizer
       piglatinize_sentense(input)
     else
       piglatinize_word(input)
-    end 
+    end
   end
 end
