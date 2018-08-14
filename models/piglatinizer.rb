@@ -35,7 +35,7 @@ class PigLatinizer
   end
 
   def piglatinize(input)
-    input = input.split(" ")
+    input = input[0].split(" ")
     if input.length > 1
       piglatinize_sentense(input)
     else
