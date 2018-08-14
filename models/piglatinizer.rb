@@ -1,9 +1,5 @@
 require 'pry'
 class PigLatinizer
-  #
-  # def initialize(text)
-  #   piglatinize(text)
-  # end
 
   def vowel?(letter)
     vowels = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"]
