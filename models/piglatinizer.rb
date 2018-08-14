@@ -1,6 +1,6 @@
 class PigLatinizer
 
-  def initialize(text)
+  def initialize(text = "")
     @pigtext = piglatinize_sentense(text)
   end
 
