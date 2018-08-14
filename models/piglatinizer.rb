@@ -39,6 +39,7 @@ class PigLatinizer
       piglatinize_sentense(input)
     else
       piglatinize_word(input)
+      binding.pry 
     end
   end
 
