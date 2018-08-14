@@ -35,13 +35,14 @@ class PigLatinizer
   end
 
   def piglatinize(input)
+    binding.pry
     input = input[0].split(" ")
     if input.length > 1
       piglatinize_sentense(input)
     else
       piglatinize_word(input)
     end
-    binding.pry
+
   end
 
 end
