@@ -5,9 +5,9 @@ class PigLatinizer
     piglatinize(text)
   end
 
-  def vowel?(word)
-    binding.pry
-    word.match(/[AEIOUaeiou]/)
+  def vowel?(letter)
+
+    letter.match(/[AEIOUaeiou]/)
 
   end
 
@@ -16,6 +16,7 @@ class PigLatinizer
   end
 
   def piglatinize_word(word)
+    binding.pry
     if vowel?(word[0])
       word = word + "way"
     elsif consonant?(word[0]) && vowel?(word[1])
