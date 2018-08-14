@@ -15,7 +15,6 @@ class PigLatinizer
   end
 
   def piglatinize_word(word)
-    # binding.pry
     word = word[0]
     if vowel?(word[0])
       word = word + "way"
@@ -31,7 +30,7 @@ class PigLatinizer
   end
 
   def piglatinize_sentense(sentence)
-    sentence = sentence.split(" ")
+    # sentence = sentence.split(" ")
     sentence.collect {|word| piglatinize_word(word)}.join(" ")
   end
 
