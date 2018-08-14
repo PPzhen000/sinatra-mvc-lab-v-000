@@ -6,7 +6,8 @@ class PigLatinizer
   # end
 
   def vowel?(letter)
-    letter.match(/[AEIOUaeiou]/)
+    vowels = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"]
+    vowels.include?(letter)
   end
 
   def consonant?(letter)
