@@ -40,4 +40,5 @@ class PigLatinizer
       piglatinize_word(input)
     end
   end
+  
 end
