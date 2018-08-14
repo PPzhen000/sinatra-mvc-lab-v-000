@@ -33,7 +33,7 @@ class PigLatinizer
   def piglatinize(input)
     result = ""
     if input.include?(" ")
-      result = piglatinize_sentense(input) #array is passing in
+      result = piglatinize_sentense(input)
     else
       result = piglatinize_word(input)
     end
